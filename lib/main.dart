@@ -20,7 +20,11 @@ class benimUyg extends StatelessWidget{
                 ),
                 Text(
                   "Flutter Kahvecisi",
-                  style: TextStyle(fontSize: 45, color: Colors.brown[900],),
+                  style: TextStyle(
+                    fontFamily: 'Satisfy',
+                    fontSize: 45,
+                    color: Colors.brown[900],
+                  ),
                 ),
               ],
             ),
