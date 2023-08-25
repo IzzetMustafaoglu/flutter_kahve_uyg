@@ -18,7 +18,10 @@ class benimUyg extends StatelessWidget{
                   backgroundColor: Colors.lime,
                   backgroundImage: AssetImage('assets/images/kahve.png'),
                 ),
-                
+                Text(
+                  "Flutter Kahvecisi",
+                  style: TextStyle(fontSize: 45, color: Colors.brown[900],),
+                ),
               ],
             ),
           ),
