@@ -35,51 +35,53 @@ class benimUyg extends StatelessWidget{
 
               ),
             ),
-                SizedBox(
-                  height: 10,
-                ),
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 45.0), // iki taraftan boşluk
-                  padding: EdgeInsets.all(10.0),
-                  color: Colors.brown,
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
-                        color: Colors.white,
-                      ),
-                      SizedBox(width: 10.0,),
-                      Text(
-                        "sipariş@kahveci.com",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20.0,
-                        ),
-                      )
-                    ],
+                  width: 200,
+                  child: Divider(  // Araya çizgi çekti
+                    height: 15,
+                    color: Colors.brown[900],
                   ),
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                Container(
-                  margin: EdgeInsets.symmetric(horizontal: 45),
-                  padding: EdgeInsets.all(10),  // Hepsini büyütme
+                Card(
+                  margin: EdgeInsets.symmetric(horizontal: 45.0), // iki taraftan boşluk
+            //      padding: EdgeInsets.all(10.0),
                   color: Colors.brown,
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.phone,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.white,
+                    ),
+                    title: Text(
+                      "sipariş@kahveci.com",
+                      style: TextStyle(
                         color: Colors.white,
+                        fontSize: 20.0,
                       ),
-                      Text(
-                        "0544 482 32 65",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Card(
+                  margin: EdgeInsets.symmetric(horizontal: 45),
+             //     padding: EdgeInsets.all(10),  // Hepsini büyütme
+                  color: Colors.brown,
+                  child: ListTile(
+                    leading: Icon(
+                    Icons.phone,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    "0544 482 32 65",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                    ),
+                   ),
                   ),
                 )
               ],
